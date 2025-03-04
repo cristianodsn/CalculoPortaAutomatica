@@ -20,6 +20,11 @@ namespace GatesCalculator.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Produto>(entity =>
+            {
+                entity.Ignore(p => p.QuantidadeEmEstoque);
+            });
+
             modelBuilder.Entity<ProdutosPadrao>()
                 .HasOne(p => p.Soleira)
                 .WithMany()

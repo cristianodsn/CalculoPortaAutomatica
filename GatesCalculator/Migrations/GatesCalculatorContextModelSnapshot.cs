@@ -105,9 +105,6 @@ namespace GatesCalculator.Migrations
                     b.Property<decimal>("Quantidade")
                         .HasColumnType("numeric");
 
-                    b.Property<decimal>("QuantidadeEstoque")
-                        .HasColumnType("numeric");
-
                     b.HasKey("Id");
 
                     b.HasIndex("ProdutoGenericoId");

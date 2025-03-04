@@ -6,7 +6,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GatesCalculator.Migrations
 {
     /// <inheritdoc />
-    public partial class Inicial : Migration
+    public partial class Inicail : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -74,7 +74,6 @@ namespace GatesCalculator.Migrations
                     Nome = table.Column<string>(type: "text", nullable: false),
                     Preco = table.Column<decimal>(type: "numeric", nullable: false),
                     FormatoDeVenda = table.Column<int>(type: "integer", nullable: false),
-                    QuantidadeEstoque = table.Column<decimal>(type: "numeric", nullable: false),
                     Quantidade = table.Column<decimal>(type: "numeric", nullable: false),
                     ProdutoGenericoId = table.Column<int>(type: "integer", nullable: true)
                 },

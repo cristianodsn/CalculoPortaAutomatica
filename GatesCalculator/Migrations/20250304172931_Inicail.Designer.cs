@@ -11,8 +11,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace GatesCalculator.Migrations
 {
     [DbContext(typeof(GatesCalculatorContext))]
-    [Migration("20250302214318_Inicial")]
-    partial class Inicial
+    [Migration("20250304172931_Inicail")]
+    partial class Inicail
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -106,9 +106,6 @@ namespace GatesCalculator.Migrations
                         .HasColumnType("integer");
 
                     b.Property<decimal>("Quantidade")
-                        .HasColumnType("numeric");
-
-                    b.Property<decimal>("QuantidadeEstoque")
                         .HasColumnType("numeric");
 
                     b.HasKey("Id");
